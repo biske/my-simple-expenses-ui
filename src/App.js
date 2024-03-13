@@ -3,7 +3,8 @@ import { Random } from './Random';
 import {
   QueryClient,
   QueryClientProvider,
-} from '@tanstack/react-query'
+} from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 import "./App.css";
 
@@ -53,6 +54,7 @@ function App() {
         </div>
       </div>
       <Random />
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
