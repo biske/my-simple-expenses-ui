@@ -19,7 +19,7 @@ export const Random = () => {
   return (
     <button onClick={() => query.refetch()}>
       Random number: {
-        query.isLoading || query.isFetching ? "..." : query.data
+        query.isLoading || query.isFetching ? "Loading..." : query.data
       }
     </button>
   );
