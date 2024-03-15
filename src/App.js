@@ -21,7 +21,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <div className="app w-full">
         <header className="bg-blue-500 text-white text-lg p-4 fixed top-0 w-full">
-          My Simple Expenses
+          <span>My Simple Expenses</span><br /><ApiStatus />
         </header>
         <div className="main-content pt-16 p-4">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
@@ -53,7 +53,6 @@ function App() {
           </form>
         </div>
       </div>
-      <ApiStatus />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
