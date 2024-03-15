@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
-import { Random } from './Random';
+import { ApiStatus } from './ApiStatus';
 import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 import "./App.css";
 
@@ -53,7 +53,7 @@ function App() {
           </form>
         </div>
       </div>
-      <Random />
+      <ApiStatus />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
